@@ -2,7 +2,21 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        String text = new Scanner(System.in).nextLine();
-        System.out.println("Длина текста: " + text.length());
+        Scanner scanner = new Scanner(System.in);
+        System.out.println
+                ("Введите первое число:");
+        int enterTheNumberFirst = scanner.nextInt();
+        System.out.println
+                ("Введите второе число:");
+        int enterTheNumberSecond = scanner.nextInt();
+
+        System.out.println
+                ("Сумма чисел: " + (enterTheNumberFirst + enterTheNumberSecond));
+        System.out.println
+                ("Разность чисел: " + (enterTheNumberFirst - enterTheNumberSecond));
+        System.out.println
+                ("Произведение чисел: " + (enterTheNumberFirst * enterTheNumberSecond));
+        System.out.println
+                ("Частное: " + ((double)enterTheNumberFirst / enterTheNumberSecond));
     }
 }
